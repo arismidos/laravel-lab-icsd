@@ -35,7 +35,7 @@
         </div>
     @endif
 
-    <form action="/users" method="POST">
+    <form action="{{ url('/users') }}" method="POST">
         @csrf {{-- Προστασία CSRF --}}
         
         <label for="name">Ονοματεπώνυμο</label>
